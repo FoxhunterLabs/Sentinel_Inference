@@ -1,0 +1,17 @@
+[project]
+name = "sentinel-inference"
+version = "0.1.0"
+description = "Deterministic, auditable ML inference microservice (advisory-only)."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "pydantic>=2.6",
+  "pydantic-settings>=2.2",
+  "python-json-logger>=2.0",
+  "prometheus-client>=0.20",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
